@@ -1,5 +1,7 @@
 # Chatbot Builder
 
+[![CI](https://github.com/maxakagaret/chatbot-builder/actions/workflows/ci.yml/badge.svg)](https://github.com/maxakagaret/chatbot-builder/actions/workflows/ci.yml)
+
 A visual scenario editor (Vue 3 + Vue Flow) and a channel-agnostic conversation engine (Laravel). A scenario is a JSON graph of steps. Before publishing, it is checked for structural problems. It is then published as an immutable version and executed the same way in a web widget, Telegram, WhatsApp or SMS.
 
 > All integrations are simulated. The channel adapters produce the exact provider payloads, but a fake gateway writes them to an `outbound_log` table instead of calling an API. Bookings go to a fake booking system. All data is synthetic.
