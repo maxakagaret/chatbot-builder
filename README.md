@@ -208,6 +208,12 @@ frontend/src/
 - **New channel:** implement `ChannelAdapter` (`rules`, `parse`, `format`), add a `ChannelType` case and register it in `AppServiceProvider::CHANNELS`.
 - **Real providers:** bind real `OutboundGateway` and `BookingGateway` implementations instead of the fakes.
 
+## How this was built
+
+This is a portfolio project. Its architecture is based on production modules I designed and built single-handedly in a commercial SaaS platform. This repository is a clean-room reimplementation: no proprietary code, names or data.
+
+The implementation was written with AI assistance (Claude Code). I defined the requirements and architecture, made the design decisions and reviewed the result. I'm happy to walk through any part of it.
+
 ## Out of scope
 
 - Authentication and multi-tenancy: the API is open in this demo.
